@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Tilt+Neon&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -15,23 +18,31 @@
                 <div class="search-wrapper">
                     <img src="/img/search.svg" alt="Search Icon for searching">
                 </div>
-                <div class="search-bar">
+                <!-- <div class="search-bar">
 
+                </div> -->
+                <div class="search-bar">
+                    <form>
+                        <input type="text" placeholder="Search...">
+                    </form>
                 </div>
                 <div class="notification-wrapper">
                     <img src="/img/bell.png" alt="Bell icon for notifications">
                 </div>
                 <div class="profile-pic-wrapper">
-
+                    <img src="/img/takagi-profile-pic.jpg" alt="Profile picture image - Takagi-san">
                 </div>
                 <h3>Takagi-san</h3>
             </div>
             <div class="heading2">
                 <div class="greeting-wrapper">
                     <div class="profile-pic-wrapper">
+                        <img src="/img/takagi-profile-pic.jpg" alt="Profile picture image - Takagi-san">
                     </div>
-                    <p>Hi there,</p>
-                    <h4>Takagi-san (@takagisan2002)</h4>
+                    <div class="greeting-wrapper-r">
+                        <p>Hi there,</p>
+                        <h4>Takagi-san (@takagisan2002)</h4>
+                    </div>
                 </div>
                 <nav>
                     <ul>
@@ -46,25 +57,54 @@
         <aside>
             <div class="side-title">
                 <div class="dashboard-icon">
-
+                    <img src="/img/dashboard-logo.png" alt="">
                 </div>
                 <h3>Dashboard</h3>
             </div>
             <div class="side1">
                 <ul>
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>Profile</li>
-                    <li><a href="#"></a>Messages</li>
-                    <li><a href="#"></a>History</li>
-                    <li><a href="#"></a>Tasks</li>
-                    <li><a href="#"></a>Communities</li>
+                    <li>
+                        <img src="/img/home.png" alt="Home sidebar navigation icon">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <img src="/img/profile.png" alt="Profile sidebar navigation icon">
+                        <a href="#">Profile</a>
+                    </li>
+                    <li>
+                        <img src="/img/message.png" alt="Message sidebar navigation icon">
+                        <a href="#">Messages</a>
+                    </li>
+                    <li>
+                        <img src="/img/history.png" alt="History sidebar navigation icon">
+                        <a href="#">History</a>
+                    </li>
+                    <li>
+                        <img src="/img/tasks.png" alt="Tasks sidebar navigation icon">
+                        <a href="#">Tasks</a>
+                    </li>
+                    <li>
+                        <img src="/img/communities.png" alt="Communities sidebar navigation icon">
+                        <a href="#">Communities</a>
+                    </li>
                 </ul>
             </div>
-            <ul>
-                <li><a href="#"></a>Settings</li>
-                <li><a href="#"></a>Support</li>
-                <li><a href="#"></a>Privacy</li>
-            </ul>
+            <div class="side2">
+                <ul>
+                    <li>
+                        <img src="/img/settings.png" alt="Settings sidebar navigation icon">
+                        <a href="#">Settings</a>
+                    </li>
+                    <li>
+                        <img src="/img/support.png" alt="Support sidebar navigation icon">
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <img src="/img/privacy.png" alt="Privacy sidebar navigation icon">
+                        <a href="#">Privacy</a>
+                    </li>
+                </ul>
+            </div>
         </aside>
         <!-- Main content -->
         <section>
@@ -74,128 +114,152 @@
                     <div class="card card1">
                         <h5>Super Cool Project</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et pretium quam. Praesent dictum velit non justo blandit consectetur. Nam ac leo massa. Sed porta in elit nec cursus. Maecenas.</p>
-                        <div class="card-icon1">
-                            <img src="/img/save.png" alt="bookmark icon">
-                        </div>
-                        <div class="card-icon2">
-                            <img src="/img/delete.png" alt="delete icon"">
-                        </div>
-                        <div class="card-icon3">
-                            <img src="/img/share.png" alt="save icon">
+                        <div class="card-icons">
+                            <div class="card-icon1">
+                                <img src="/img/save.png" alt="bookmark icon">
+                            </div>
+                            <div class="card-icon2">
+                                <img src="/img/delete.png" alt="delete icon"">
+                            </div>
+                            <div class="card-icon3">
+                                <img src="/img/share.png" alt="save icon">
+                            </div>
                         </div>
                     </div>
                     <div class="card card2">
                         <h5>Less Cool Project</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et pretium quam. Praesent dictum velit non justo blandit consectetur. Nam ac leo massa. Sed porta in elit nec cursus. Maecenas.</p>
-                        <div class="card-icon1">
-                            <img src="/img/save.png" alt="bookmark icon">
-                        </div>
-                        <div class="card-icon2">
-                            <img src="/img/delete.png" alt="delete icon"">
-                        </div>
-                        <div class="card-icon3">
-                            <img src="/img/share.png" alt="save icon">
+                        <div class="card-icons">
+                            <div class="card-icon1">
+                                <img src="/img/save.png" alt="bookmark icon">
+                            </div>
+                            <div class="card-icon2">
+                                <img src="/img/delete.png" alt="delete icon"">
+                            </div>
+                            <div class="card-icon3">
+                                <img src="/img/share.png" alt="save icon">
+                            </div>
                         </div>
                     </div>
                     <div class="card card3">
                         <h5>Impossible App</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et pretium quam. Praesent dictum velit non justo blandit consectetur. Nam ac leo massa. Sed porta in elit nec cursus. Maecenas.</p>
-                        <div class="card-icon1">
-                            <img src="/img/save.png" alt="bookmark icon">
-                        </div>
-                        <div class="card-icon2">
-                            <img src="/img/delete.png" alt="delete icon"">
-                        </div>
-                        <div class="card-icon3">
-                            <img src="/img/share.png" alt="save icon">
+                        <div class="card-icons">
+                            <div class="card-icon1">
+                                <img src="/img/save.png" alt="bookmark icon">
+                            </div>
+                            <div class="card-icon2">
+                                <img src="/img/delete.png" alt="delete icon"">
+                            </div>
+                            <div class="card-icon3">
+                                <img src="/img/share.png" alt="save icon">
+                            </div>
                         </div>
                     </div>
                     <div class="card card4">
                         <h5>Easy Peasy App</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et pretium quam. Praesent dictum velit non justo blandit consectetur. Nam ac leo massa. Sed porta in elit nec cursus. Maecenas.</p>
-                        <div class="card-icon1">
-                            <img src="/img/save.png" alt="bookmark icon">
-                        </div>
-                        <div class="card-icon2">
-                            <img src="/img/delete.png" alt="delete icon"">
-                        </div>
-                        <div class="card-icon3">
-                            <img src="/img/share.png" alt="save icon">
+                        <div class="card-icons">
+                            <div class="card-icon1">
+                                <img src="/img/save.png" alt="bookmark icon">
+                            </div>
+                            <div class="card-icon2">
+                                <img src="/img/delete.png" alt="delete icon"">
+                            </div>
+                            <div class="card-icon3">
+                                <img src="/img/share.png" alt="save icon">
+                            </div>
                         </div>
                     </div>
                     <div class="card card5">
                         <h5>Ad Blocker</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et pretium quam. Praesent dictum velit non justo blandit consectetur. Nam ac leo massa. Sed porta in elit nec cursus. Maecenas.</p>
-                        <div class="card-icon1">
-                            <img src="/img/save.png" alt="bookmark icon">
-                        </div>
-                        <div class="card-icon2">
-                            <img src="/img/delete.png" alt="delete icon"">
-                        </div>
-                        <div class="card-icon3">
-                            <img src="/img/share.png" alt="save icon">
+                        <div class="card-icons">
+                            <div class="card-icon1">
+                                <img src="/img/save.png" alt="bookmark icon">
+                            </div>
+                            <div class="card-icon2">
+                                <img src="/img/delete.png" alt="delete icon"">
+                            </div>
+                            <div class="card-icon3">
+                                <img src="/img/share.png" alt="save icon">
+                            </div>
                         </div>
                     </div>
                     <div class="card card6">
                         <h5>Money Maker</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et pretium quam. Praesent dictum velit non justo blandit consectetur. Nam ac leo massa. Sed porta in elit nec cursus. Maecenas.</p>
-                        <div class="card-icon1">
-                            <img src="/img/save.png" alt="bookmark icon">
-                        </div>
-                        <div class="card-icon2">
-                            <img src="/img/delete.png" alt="delete icon"">
-                        </div>
-                        <div class="card-icon3">
-                            <img src="/img/share.png" alt="save icon">
+                        <div class="card-icons">
+                            <div class="card-icon1">
+                                <img src="/img/save.png" alt="bookmark icon">
+                            </div>
+                            <div class="card-icon2">
+                                <img src="/img/delete.png" alt="delete icon"">
+                            </div>
+                            <div class="card-icon3">
+                                <img src="/img/share.png" alt="save icon">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="main-announcements">
                 <h4>Announcements</h4>
-                <div class="announcment announcment1">
-                    <h5>Site Maintanence</h5>
-                    <p>Sed sit amet urna eget nisi aliquet dictum. Aenean vitae ultrices orci. Cras tortor tortor, sollicitudin efficitur lobortis eu, fringilla semper nunc. Suspendisse quis massa justo. Sed quis maximus orci.
-                    </p>
-                </div>
-                <div class="announcment announcment2">
-                    <h5>Community Share Day</h5>
-                    <p>Vivamus aliquet interdum cursus. In nisi dui, porttitor id ornare sed, cursus nec elit. Duis vel vestibulum massa. In a.</p>
-                </div>
-                <div class="announcment announcment13">
-                    <h5>Updated Privacy Policy</h5>
-                    <p>Fusce aliquet tristique arcu, vel vulputate lorem efficitur ut. Ut vitae nunc vitae justo convallis mattis. Nunc leo ex, efficitur a ligula.</p>
+                <div class="announcement-wrapper">
+                    <div class="announcment announcment1">
+                        <h5>Site Maintanence</h5>
+                        <p>Sed sit amet urna eget nisi aliquet dictum. Aenean vitae ultrices orci. Cras tortor tortor, sollicitudin efficitur lobortis eu, fringilla semper nunc. Suspendisse quis massa justo. Sed quis maximus orci.
+                        </p>
+                    </div>
+                    <div class="announcment announcment2">
+                        <h5>Community Share Day</h5>
+                        <p>Vivamus aliquet interdum cursus. In nisi dui, porttitor id ornare sed, cursus nec elit. Duis vel vestibulum massa. In a.</p>
+                    </div>
+                    <div class="announcment announcment3">
+                        <h5>Updated Privacy Policy</h5>
+                        <p>Fusce aliquet tristique arcu, vel vulputate lorem efficitur ut. Ut vitae nunc vitae justo convallis mattis. Nunc leo ex, efficitur a ligula.</p>
+                    </div>
                 </div>
             </div>
             <div class="main-trending">
                 <h4>Trending</h4>
-                <div class="user user1">
-                    <div class="user-img">
-
+                <div class="trending-wrapper">
+                    <div class="user user1">
+                        <div class="user-img">
+                            <img src="/img/nishikata-profile-pic.jpg" alt="profile picture image - nishikata">
+                        </div>
+                        <div class="user-description">
+                            <h5>@nishikata</h5>
+                            <p>World Peace Builder</p>
+                        </div>
                     </div>
-                    <h5>tegan</h5>
-                    <p>World Peace Builder</p>
-                </div>
-                <div class="user user2">
-                    <div class="user-img">
-                        
+                    <div class="user user2">
+                        <div class="user-img">
+                            <img src="/img/mano-profile-pic.jpg" alt="profile picture image - mano">
+                        </div>
+                        <div class="user-description">
+                            <h5>@mano</h5>
+                            <p>Super Cool Project</p>
+                        </div>
                     </div>
-                    <h5>morgan</h5>
-                    <p>Super Cool Project</p>
-                </div>
-                <div class="user user3">
-                    <div class="user-img">
-                        
+                    <div class="user user3">
+                        <div class="user-img">
+                            <img src="/img/houjou-profile-pic.jpg" alt="profile picture image - houjou">
+                        </div>
+                        <div class="user-description">
+                            <h5>@houjou</h5>
+                            <p>Life Changing App</p>
+                        </div>
                     </div>
-                    <h5>kendall</h5>
-                    <p>Life Changing App</p>
-                </div>
-                <div class="user user4">
-                    <div class="user-img">
-                        
+                    <div class="user user4">
+                        <div class="user-img">
+                            <img src="/img/mina-profile-pic.webp" alt="profile picture image - mina">
+                        </div>
+                        <div class="user-description">
+                            <h5>@mina</h5>
+                            <p>No Traffic Maker</p>
+                        </div>
                     </div>
-                    <h5>alex</h5>
-                    <p>No Traffic Maker</p>
                 </div>
             </div>
         </section>
